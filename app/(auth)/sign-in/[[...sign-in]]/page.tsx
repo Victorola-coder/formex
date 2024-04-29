@@ -6,7 +6,7 @@ export default function SignInPage() {
       className={`flex flex-col items-center justify-center min-h-screen p-3 gap-3`}
     >
       <div className="text-xl font-semibold sm:text-2xl">
-        Login to your fudwud account
+        Login to your Formex account
       </div>
       <SignIn />
     </section>
