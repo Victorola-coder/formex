@@ -3,7 +3,7 @@
 import { Form } from "@prisma/client";
 import React, { useEffect, useState } from "react";
 import PreviewDialogBtn from "./previewDialogBtn";
-import PublishFormBtn from "./publishFormbtn";
+import PublishFormBtn from "./publishFormBtn";
 import SaveFormBtn from "./saveFormBtn";
 import Designer from "./designer";
 import {
