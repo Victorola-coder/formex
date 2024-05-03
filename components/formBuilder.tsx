@@ -13,7 +13,7 @@ import {
   useSensor,
   useSensors,
 } from "@dnd-kit/core";
-import DragOverlayWrapper from "./DragOverlayWrapper";
+import DragOverlayWrapper from "./dragOverlayWrapper";
 import useDesigner from "./hooks/useDesigner";
 import { ImSpinner2 } from "react-icons/im";
 import { Input } from "./ui/input";
