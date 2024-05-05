@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import DesignerSidebar from "./DesignerSidebar";
+import DesignerSidebar from "./designerSidebar";
 import {
   DragEndEvent,
   useDndMonitor,
