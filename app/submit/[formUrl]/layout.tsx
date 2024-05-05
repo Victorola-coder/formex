@@ -1,5 +1,5 @@
-import Logo from "@/components/Logo";
-import ThemeSwitcher from "@/components/ThemeSwitcher";
+import Logo from "@/components/logo";
+import ThemeSwitcher from "@/components/themeSwitcher";
 import React, { ReactNode } from "react";
 
 function Layout({ children }: { children: ReactNode }) {

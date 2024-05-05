@@ -1,6 +1,6 @@
 import { GetFormContentByUrl } from "@/actions/form";
 import { FormElementInstance } from "@/components/FormElements";
-import FormSubmitComponent from "@/components/FormSubmitComponent";
+import FormSubmitComponent from "@/components/formSubmitComponent";
 import React from "react";
 
 async function SubmitPage({
