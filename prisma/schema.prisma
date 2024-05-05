@@ -31,7 +31,7 @@ model Form {
   FormSubmission FormSubmission[]
 
   @@unique([name, userId])
-}
+}  
 
 
 model FormSubmission {
