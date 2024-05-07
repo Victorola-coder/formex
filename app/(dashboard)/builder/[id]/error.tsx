@@ -16,7 +16,7 @@ function ErrorPage({ error }: { error: Error }) {
         <Link href={"/"}>Go back to home</Link>
       </Button>
     </div>
-  );
+  ); 
 }
 
 export default ErrorPage;
