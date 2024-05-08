@@ -14,7 +14,5 @@ export default async function Builder({
   if (!form) {
     throw new Error("form not found");
   }
-  return <div>
-    <FormBuilder form={form} />
-  </div>;
+  return  <FormBuilder form={form} />
 }

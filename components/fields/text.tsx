@@ -1,23 +1,31 @@
 "use client"
-import { ElementsType, FormElement } from "../formElements"
 
- 
 
+import { MdTextFields } from "react-icons/md"
+import { ElementsType, FormElement, FormElementInstance } from "../formElements" 
 
 const type : ElementsType = "TextField"
 
 export const TextFieldFormElement : FormElement = {
-    type,
+  type,
+  construct: (id: string) => ({
+    id, type,
+    extraAttributes: {
+      label: 'Text Fields',
+      helperText: "helper",
+      required: false,
+      placeholder: "Value here..."
+    },
+  }),
+  designerBtnElement: {
+    icon: MdTextFields,
+    label: "text fields"
+  },
 
-    construct: (id: string) => ({
-        id,
-        type,
-        extraAttributes,
-      }),
-      designerBtnElement: {
-        icon: MdTextFields,
-        label: "Text Field",
-      },
-      
-    designerComponent : ()=> <div>designer</div>
+  designerComponent: () => <div>designer</div>,
+  formComponent: () => <div>form</div>,
+  propertiesComponent: () => <div>propertiesComponent</div>,
+  validate: function (formElement: FormElementInstance, currentValue: string): boolean {
+    throw new Error("Function not implemented.")
+  }
 }
