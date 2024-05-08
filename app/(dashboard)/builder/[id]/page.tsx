@@ -1,4 +1,5 @@
 import { GetFormById } from "@/actions/form";
+import FormBuilder from "@/components/formBuilder";
 
 export default async function Builder({
   params,
@@ -13,5 +14,7 @@ export default async function Builder({
   if (!form) {
     throw new Error("form not found");
   }
-  return <div>page</div>;
+  return <div>
+    <FormBuilder form={form} />
+  </div>;
 }
