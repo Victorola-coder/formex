@@ -7,6 +7,7 @@ import {
     useDraggable,
     useDroppable,
   } from "@dnd-kit/core";
+import DesignerSidebar from "./designerSidebar";
 
 
 export default function Designer(){
@@ -37,18 +38,18 @@ export default function Designer(){
             Drop here
           </p>
 
-        {droppable.isOver && elements.length === 0 && (
+        {/* {droppable.isOver && elements.length === 0 && (
+        )} */}
           <div className="p-4 w-full">
             <div className="h-[120px] rounded-md bg-primary/20"></div>
           </div>
-        )}
-        {elements.length > 0 && (
+        {/* {elements.length > 0 && (
           <div className="flex flex-col  w-full gap-2 p-4">
             {elements.map((element) => (
               <DesignerElementWrapper key={element.id} element={element} />
             ))}
           </div>
-        )}
+        )} */}
       </div>
     </div>
     <DesignerSidebar />

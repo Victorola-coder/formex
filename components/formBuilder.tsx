@@ -5,9 +5,25 @@ import PreviewDialogBtn from "./previewDialogBtn"
 import Designer from "./designer"
 import SaveFormBtn from "./saveFormBtn"
 import PublishFormBtn from "./publishFormbtn"
+import { DndContext, MouseSensor,TouchSensor, useSensor,useSensors, } from "@dnd-kit/core"
 
 export default function FormBuilder ({form}: {form: Form}){
-    return <>
+
+    const mouseSensor = useSensor(MouseSensor, {
+        activationConstraint: {
+          distance: 10, // 10px
+        },
+      });
+    
+      const touchSensor = useSensor(TouchSensor, {
+        activationConstraint: {
+          delay: 300,
+          tolerance: 5,
+        },
+      });
+      const sensors = useSensors(mouseSensor, touchSensor);
+
+    return <DndContext sensors={sensors}>
      <main className="flex flex-col w-full">
         <nav className="flex flex-row justify-between border-b-2 p-4 gap-3 items-center">
           <h2 className="truncate font-medium">
@@ -28,5 +44,5 @@ export default function FormBuilder ({form}: {form: Form}){
           <Designer />
         </div>
       </main>
-    </>
+    </DndContext>
 }
