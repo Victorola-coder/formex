@@ -3,6 +3,8 @@
 import { Form } from "@prisma/client"
 import PreviewDialogBtn from "./previewDialogBtn"
 import Designer from "./designer"
+import SaveFormBtn from "./saveFormBtn"
+import PublishFormBtn from "./publishFormbtn"
 
 export default function FormBuilder ({form}: {form: Form}){
     return <>
@@ -16,8 +18,8 @@ export default function FormBuilder ({form}: {form: Form}){
             <PreviewDialogBtn />
             {!form.published && (
               <>
-                <SaveFormBtn id={form.id} />
-                <PublishFormBtn id={form.id} />
+                <SaveFormBtn  />
+                <PublishFormBtn/>
               </>
             )}
           </div>

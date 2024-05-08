@@ -1,5 +1,5 @@
 import { GetFormById } from "@/actions/form";
-import FormBuilder from "@/components/formBuilder";
+import FormBuilder from "@/components/FormBuilder.1";
 
 export default async function Builder({
   params,
