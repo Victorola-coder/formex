@@ -2,6 +2,7 @@
 
 import { Form } from "@prisma/client"
 import PreviewDialogBtn from "./previewDialogBtn"
+import Designer from "./designer"
 
 export default function FormBuilder ({form}: {form: Form}){
     return <>
@@ -22,7 +23,7 @@ export default function FormBuilder ({form}: {form: Form}){
           </div>
         </nav>
         <div className="flex w-full flex-grow items-center justify-center relative overflow-y-auto h-[200px] bg-accent bg-[url(/paper.svg)] dark:bg-[url(/paper-dark.svg)]">
-          {/* <Designer /> */}
+          <Designer />
         </div>
       </main>
     </>
