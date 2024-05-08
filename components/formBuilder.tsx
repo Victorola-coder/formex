@@ -14,12 +14,12 @@ export default function FormBuilder ({form}: {form: Form}){
           </h2>
           <div className="flex items-center gap-2">
             <PreviewDialogBtn />
-            {/* {!form.published && (
+            {!form.published && (
               <>
                 <SaveFormBtn id={form.id} />
                 <PublishFormBtn id={form.id} />
               </>
-            )} */}
+            )}
           </div>
         </nav>
         <div className="flex w-full flex-grow items-center justify-center relative overflow-y-auto h-[200px] bg-accent bg-[url(/paper.svg)] dark:bg-[url(/paper-dark.svg)]">
